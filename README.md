@@ -1,6 +1,6 @@
 # White Ball Detection and Closest Ball Calculation
 
-![Example](![mains](https://github.com/fabiano1606/White-Ball-Detection-and-Proximity/assets/40632931/1d0463d4-6d6e-493b-9439-d5b6a310b890))
+![mains](https://github.com/fabiano1606/White-Ball-Detection-and-Proximity/assets/40632931/1d0463d4-6d6e-493b-9439-d5b6a310b890)
 
 
 ## Introduction
