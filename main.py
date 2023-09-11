@@ -32,6 +32,7 @@ contornos, _ = cv.findContours(imagem_binaria, cv.RETR_EXTERNAL, cv.CHAIN_APPROX
 white_ball = None
 maior_area = 0
 
+# Encontre o contorno com a maior área, que deve ser a bola branca
 for contorno in contornos:
     area = cv.contourArea(contorno)
     if area > maior_area:
@@ -39,10 +40,12 @@ for contorno in contornos:
         white_ball = contorno
 
 if white_ball is not None:
+    # Desenhe o contorno da bola branca
     x, y, largura, altura = cv.boundingRect(white_ball)
     cv.rectangle(img, (x, y), (x + largura, y + altura), (255, 0, 0), 2)
  
     if circles is not None:
+        # Converta o raio e o centro do círculo para inteiros
         circles = np.uint16(np.around(circles))
     
         closest_ball = None
